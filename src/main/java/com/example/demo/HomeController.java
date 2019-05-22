@@ -19,7 +19,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String listCars(Model model){
-        model.addAttribute("Cars", carRepository.findAll());
+        model.addAttribute("cars", carRepository.findAll());
         return "list";
     }
     @GetMapping("/add")
@@ -45,7 +45,7 @@ public class HomeController {
         model.addAttribute("car", carRepository.findById(id).get());
         return "carform";
     }
-    @RequestMapping("/update/{id}")
+    @RequestMapping("/delete/{id}")
     public String delCar(@PathVariable("id") long id){
         carRepository.deleteById(id);
         return "redirect:/";

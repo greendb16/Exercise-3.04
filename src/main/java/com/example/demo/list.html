@@ -19,8 +19,8 @@
         <td th:text="${car.model}"></td>
         <td>
             <a th:href="@{/update/{id}(id=${car.id})}">Update</a> -
-            <a th:href="@/detail/{id}(id=${car.id})}">Detail</a>
-            <a th:href="@/delete/{id}(id={car.id})}">Delete</a>
+            <a th:href="@{/detail/{id}(id=${car.id})}">Detail</a> -
+            <a th:href="@{/delete/{id}(id=${car.id})}">Delete</a> -
         </td>
     </tr>
 </table>

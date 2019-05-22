@@ -6,7 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DataLogger implements CommandLineRunner{
+public class DataLoader implements CommandLineRunner{
 
     @Autowired
     CarRepository repository;

@@ -14,7 +14,6 @@ public class Car {
     private long id;
 
     @NotNull
-    @Size(min = 4, max = 4)
     private int year;
 
     @NotNull
